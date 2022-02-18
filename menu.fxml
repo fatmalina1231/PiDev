@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.MenuController">
+   <children>
+      <Button fx:id="gesuser" layoutX="40.0" layoutY="118.0" mnemonicParsing="false" onAction="#userEvent" prefHeight="63.0" prefWidth="136.0" text="gestion utilisateurs" />
+      <Button fx:id="gesdev" layoutX="202.0" layoutY="115.0" mnemonicParsing="false" onAction="#userdev" prefHeight="63.0" prefWidth="145.0" text="gestions devs" />
+      <Button fx:id="gesgrp" layoutX="367.0" layoutY="118.0" mnemonicParsing="false" onAction="#userdevgrp" prefHeight="56.0" prefWidth="145.0" text="gestion devgroups" />
+   </children>
+</AnchorPane>

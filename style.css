@@ -1,0 +1,24 @@
+.labelform{
+    -fx-font-weight: bold;
+    -fx-background-color: #ffc300;
+}
+ 
+.box{
+    -fx-font-weight: bold;
+}
+ 
+.field{
+    -fx-font-weight: bold;
+}
+.btn{
+    -fx-font-weight: bold;
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2022, 3:32:13 PM
+    Author     : Mega-PC
+*/
+

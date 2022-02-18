@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.DevgroupController">
+    
+<children>
+        <VBox layoutX="14.0" layoutY="113.0" prefHeight="157.0" prefWidth="62.0" spacing="25.0">
+            <children>
+                
+                <Label layoutX="10.0" layoutY="10.0" styleClass="labelform" stylesheets="@style.css" text="groupname" />
+                
+            </children>
+        </VBox>
+        <VBox layoutX="76.0" layoutY="113.0" prefHeight="157.0" prefWidth="180.0" spacing="15.0">
+            <children>
+                
+                 <TextField fx:id="grpname" layoutX="10.0" layoutY="10.0" styleClass="field" stylesheets="@style.css" />
+               
+            </children>
+        </VBox>
+        <Button fx:id="bsave" layoutX="14.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Save">
+            
+            
+        </Button>
+        <Button fx:id="bupdate" layoutX="104.0" layoutY="298.0" mnemonicParsing="false" onAction="#updateEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Edit">
+            
+           
+        </Button>
+        <Button fx:id="bdelete" layoutX="199.0" layoutY="298.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Delete">
+            
+           
+        </Button>
+        <Button layoutX="104.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Reset">
+            
+           
+        </Button>
+        <TableView fx:id="table" layoutX="284.0" layoutY="113.0" onMouseClicked="#tablehandleButtonAction" prefHeight="212.0" prefWidth="481.0">
+            <columns>
+          
+                <TableColumn fx:id="colgrpname" prefWidth="110.0" text="Group" />
+                
+            </columns>
+        </TableView>
+        <Pane layoutX="99.0" layoutY="16.0" prefHeight="76.0" prefWidth="634.0" stylesheets="@style.css">
+            <children>
+                <Label layoutX="113.0" layoutY="11.0" text="gestion groupes" textFill="#ffc300">
+                   
+                    
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="706.0" layoutY="352.0" styleClass="labelform" stylesheets="@style.css"  />
+    </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.DevController">
+    
+<children>
+        <VBox layoutX="14.0" layoutY="113.0" prefHeight="157.0" prefWidth="62.0" spacing="25.0">
+            <children>
+                <Label styleClass="labelform" stylesheets="@style.css" text="id" />
+                <Label layoutX="10.0" layoutY="10.0" styleClass="labelform" stylesheets="@style.css" text="groupname" />
+                <Label layoutX="10.0" layoutY="10.0" styleClass="labelform" stylesheets="@style.css" text="fullname" />
+                <Label layoutX="10.0" layoutY="27.0" styleClass="labelform" stylesheets="@style.css" text="mail" />
+                <Label layoutX="10.0" layoutY="44.0" styleClass="labelform" stylesheets="@style.css" text="gender" />
+            </children>
+        </VBox>
+        <VBox layoutX="76.0" layoutY="113.0" prefHeight="157.0" prefWidth="180.0" spacing="15.0">
+            <children>
+                <TextField fx:id="id" editable="false" styleClass="field" stylesheets="@style.css" />
+                 <TextField fx:id="grpname" layoutX="10.0" layoutY="10.0" styleClass="field" stylesheets="@style.css" />
+                <TextField fx:id="fullname" layoutX="10.0" layoutY="10.0" styleClass="field" stylesheets="@style.css" />
+                <TextField fx:id="mail" layoutX="10.0" layoutY="35.0" styleClass="field" stylesheets="@style.css" />
+                <ComboBox fx:id="gender" prefHeight="25.0" prefWidth="186.0" styleClass="box" stylesheets="@style.css" />
+            </children>
+        </VBox>
+        <Button fx:id="bsave" layoutX="14.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Save">
+            
+            
+        </Button>
+        <Button fx:id="bupdate" layoutX="104.0" layoutY="298.0" mnemonicParsing="false" onAction="#updateEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Edit">
+            
+           
+        </Button>
+        <Button fx:id="bdelete" layoutX="199.0" layoutY="298.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Delete">
+            
+           
+        </Button>
+        <Button layoutX="104.0" layoutY="349.0" mnemonicParsing="false" onAction="#clearEvent" prefHeight="33.0" prefWidth="71.0" styleClass="btn" stylesheets="@style.css" text="Reset">
+            
+           
+        </Button>
+        <TableView fx:id="table" layoutX="284.0" layoutY="113.0" onMouseClicked="#tablehandleButtonAction" prefHeight="212.0" prefWidth="481.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="110.0" text="id" />
+                <TableColumn fx:id="colgrpname" prefWidth="110.0" text="Group" />
+                <TableColumn fx:id="colfullname" prefWidth="127.0" text="fullname" />
+                <TableColumn fx:id="colmail" prefWidth="121.0" text="mail" />
+                <TableColumn fx:id="colgender" prefWidth="122.0" text="gender" />
+            </columns>
+        </TableView>
+        <Pane layoutX="99.0" layoutY="16.0" prefHeight="76.0" prefWidth="634.0" stylesheets="@style.css">
+            <children>
+                <Label layoutX="113.0" layoutY="11.0" text="JAVAFX CRUD" textFill="#ffc300">
+                   
+                    
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="706.0" layoutY="352.0" styleClass="labelform" stylesheets="@style.css" text="melo Code" />
+    </children>
+</AnchorPane>
